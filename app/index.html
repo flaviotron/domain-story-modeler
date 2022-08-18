@@ -27,42 +27,42 @@
     <div class="header">
       <div id="headlineAndButtons">
         <h3 id="headline">
-              <text id="title">&ltname of this Domain Story&gt</text>
+              <text id="title">&ltNome desta história de domínio&gt</text>
               <img src="./logo/edit_blue.png" id="edit">
         </h3>
         <div class="ButtonContainer">
             <div id=editModeButtons>
-                <button id="buttonStartReplay" class="startReplayButton" title="Start replay">
+                <button id="buttonStartReplay" class="startReplayButton" title="Iniciar Reprodução">
                     <img src="./logo/play.png">
                 </button>
-                <button id="buttonImport" class="importButton" title="Import story from file" onclick="document.getElementById('import').click();">
+                <button id="buttonImport" class="importButton" title="Importar história do arquivo" onclick="document.getElementById('import').click();">
                     <img src="./logo/unarchive.png">
                   </button>
                   <input type="file" accept=".dst, .svg" style="display:none;" id="import" onclick="this.value=null;" name="file" />
-                  <button class="exportButton" id="export" title="Export story as .dst file">
+                  <button class="exportButton" id="export" title="Exportar história como arquivo .dst">
                     <img id="exportButtonIMG" src="./logo/archive.png">
                     <img id="exportButtonIMGDirty" src = "./logo/archive_dirty.png" style="display: none">
                   </button>
-                  <button class="downloadButton" id="buttonImageDownloads" title="Export story as SVG or PNG image, or animated HTML">
+                  <button class="downloadButton" id="buttonImageDownloads" title="Exportar história como imagem SVG ou PNG ou HTML animado">
                      <img src="./logo/image.png">
                   </button>
-                  <button id="dictionaryButton" title="Edit dictionary">
+                  <button id="dictionaryButton" title="Editar dicionário">
                     <img src="./logo/spellcheck.png">
                   </button>
                   <button id="iconCustomizationButton">
-                    <img src="./logo//settings.png" title="Customize icons">
-                  <button id="keyboardShortcutInfoButton" title="Show keyboard shortcuts">
+                    <img src="./logo//settings.png" title="Personalizar ícones">
+                  <button id="keyboardShortcutInfoButton" title="Mostrar atalhos de teclado">
                       <img src="./logo/shortCutInfo.png">
                     </button>
             </div>
             <div id="presentationModeButtons" style="display: none">
-              <button id="buttonPreviousStep" class="prevoiusStepButton" title="Previous Step">
+              <button id="buttonPreviousStep" class="prevoiusStepButton" title="Passo anterior">
                 <img src="./logo/previous.png">
               </button>
-              <button id="buttonNextStep" class="NextStepButton" title="NextStep">
+              <button id="buttonNextStep" class="NextStepButton" title="Próximo passo">
                 <img src="./logo/forward.png">
               </button>
-              <button id="buttonStopReplay" class="stopReplayButton" title="Stop replay">
+              <button id="buttonStopReplay" class="stopReplayButton" title="Parar Reprodução">
                 <img src="./logo/stop.png">
               </button>
               <div id="replayStep"> 0/0</div>
@@ -99,7 +99,7 @@
     <a href="https://www.wps.de">wps.de</a>
     <text id="wpsLogoInnerText2"></text>
     <br>
-    <a href="https://github.com/WPS/domain-story-modeler">https://github.com/WPS/domain-story-modeler</a>
+    <a href="https://github.com/flaviotron/domain-story-modeler.git">https://github.com/flaviotron/domain-story-modeler.git</a>
   </div>
 
   <div id="dstLogoInfo" style="display:none;">
@@ -140,21 +140,21 @@
           <input type="text" id="domainNameInput" value="default">
         </div>
         <div>
-          <img src="./logo/unarchive.png" id="importConfigurationButton" title="import icon configuration" onclick="document.getElementById('importConfig').click()">
-          <img id="exportConfigurationButton" src="./logo/archive.png" title="export icon configuration">
+          <img src="./logo/unarchive.png" id="importConfigurationButton" title="importar configuração do ícone" onclick="document.getElementById('importConfig').click()">
+          <img id="exportConfigurationButton" src="./logo/archive.png" title="exportar configuração do ícone">
           <input type="file" accept=".domain" style="display:none;" id="importConfig" onclick="this.value=null;" name="file" />
         </div>
         <div>
-          <button id="customIconConfigSaveButton">Save</button>
-          <button id="cancelIconCustomizationButton">Cancel</button>
+          <button id="customIconConfigSaveButton">Salvar</button>
+          <button id="cancelIconCustomizationButton">Cancelar</button>
         </div>
       </div>
       <div class="iconListsContainer">
         <div id="allIconListContainer">
           <div id="allIconsListHeader">
-            <text> Unassigned |</text>
-            <text> Actor |</text>
-            <text> WorkObject</text>
+            <text> Não Definido |</text>
+            <text> Atores |</text>
+            <text> Objetos de trabalho</text>
           </div>
           <div class="listWrapper">
             <ul id="allIconsList"></ul>
@@ -162,13 +162,13 @@
         </div>
         <div class="selectedIconsContainer">
           <div id="selectedActorsContainer">
-            <p class="selectedIconListHeader">Actors</p>
+            <p class="selectedIconListHeader">Atores</p>
             <div class="listWrapper">
               <ul id="selectedActorsList"></ul>
             </div>
           </div>
           <div id="selectedWorkObjectsContainer">
-            <p class="selectedIconListHeader">WorkObjects</p>
+            <p class="selectedIconListHeader">Objetos de trabalho</p>
             <div class="listWrapper">
               <ul id="selectedWorkObjectsList"></ul>
             </div>
@@ -183,7 +183,7 @@
     <br>
     <label>
       <input id="withTitleInput" type="checkbox"/>
-      Add title and description into image
+      Adicione título e descrição à imagem
     </label>
     <br>
     <div class="buttonContainer">
@@ -200,30 +200,30 @@
   </div>
 
   <div id="numberDialog" style="display:none;">
-    <div id="number">Number:</div>
+    <div id="number">Número:</div>
     <input type="number" class="numberID" id="inputNumber" min="1" max="99" maxlength="2" size="2">
     <label>
       <input type="checkbox" name ="Nummer mehrfach zulassen" id="multipleNumberAllowed">
-      multiple
+      Múltiplo
     </label>
-    <div id="label">Activity:</div>
+    <div id="label">Atividade:</div>
     <div>
       <textarea id="inputLabel" type="text" autocomplete="off"></textarea>
     </div>
     <div id="numberDialogButtons">
-      <button id="numberSaveButton">Save</button>
-      <button id="numberQuitButton">Cancel</button>
+      <button id="numberSaveButton">Salvar</button>
+      <button id="numberQuitButton">Cancelar</button>
     </div>
   </div>
 
   <div id="labelDialog" style="display:none;">
-    <div id="labelName">Activity:</div>
+    <div id="labelName">Atividade:</div>
     <div>
       <textarea id="labelInputLabel" type="text" autocomplete="off"></textarea>
     </div>
     <div id="labelDialogButtons">
-      <button id="labelSaveButton">Save</button>
-      <button id="labelQuitButton">Cancel</button>
+      <button id="labelSaveButton">Salvar</button>
+      <button id="labelQuitButton">Cancelar</button>
     </div>
   </div>
 
@@ -235,47 +235,47 @@
         </thead>
         <tbody>
           <tr>
-            <td>Undo</td>
+            <td>Desfazer</td>
             <td>ctrl + Z</td>
           </tr>
           <tr>
-            <td>Redo</td>
+            <td>Refazer</td>
             <td>ctrl + Y     or     ctrl + shift + Z</td>
           </tr>
           <tr>
-            <td>Select All</td>
+            <td>Selecionar Todos</td>
             <td>ctrl + A</td>
           </tr>
           <tr>
-            <td>Export as .dst</td>
+            <td>Exportar para arquivo .dst</td>
             <td>ctrl + S</td>
           </tr>
           <tr>
-            <td>Import from .dst</td>
+            <td>Importar do arquivo .dst</td>
             <td>ctrl + L</td>
           </tr>
           <tr>
-            <td>Search for text (default browser funtion)</td>
+            <td>Procurar pelo texto (Essa função é nativa do navegador)</td>
             <td>ctrl + F</td>
           </tr>
           <tr>
-            <td>Edit label</td>
+            <td>Alterar a descrição</td>
             <td>E</td>
           </tr>
           <tr>
-            <td>Copy/paste</td>
+            <td>Copiar/Colar</td>
             <td>ctrl + C, ctrl + V</td>
           </tr>
           <tr>
-            <td>Hand tool</td>
+            <td>Modo de arrastar e soltar</td>
             <td>H</td>
           </tr>
           <tr>
-            <td>Lasso tool</td>
+            <td>Ferramenta de laço de seleção</td>
             <td>L</td>
           </tr>
           <tr>
-            <td>Space tool</td>
+            <td>Ferramenta de espaço</td>
             <td>S</td>
           </tr>
         </tbody>
@@ -295,8 +295,8 @@
   </div>
   <div style="clear:both;"></div>
     <div id="dictionaryButtons">
-      <button id="closeDictionaryButtonSave">Save</button>
-      <button id="closeDictionaryButtonCancel">Cancel</button>
+      <button id="closeDictionaryButtonSave">Salvar</button>
+      <button id="closeDictionaryButtonCancel">Cancelar</button>
     </div>
   </div>
 
@@ -308,31 +308,31 @@
   <div id="noContentOnCanvasInfo" style="display: none">
     <button id="closeNoContentOnCanvasInfo">X</button>
     <br>
-    <text>There currently is no content on the canvas.</text>
-    <text>Without content the canvas cannot be exported.</text>
+    <text>Atualmente, não há conteúdo na tela.</text>
+    <text>Sem conteúdo, a tela não pode ser exportada.</text>
   </div>
 
   <div id="versionInfo" style="display:none">
   <button id="closeVersionDialog">X</button>
   <br>
-  <text>Your Domain Story was created with modeler version</text>
+  <text>Sua história de domínio foi criada com a versão do modelador</text>
   <text id="importedVersion"></text>
-  <text>. This modeler is version</text>
+  <text>. Este modelador é a versão</text>
   <text id="modelerVersion"></text>
-  <text>. Please check release notes for possible compatibility problems.</text>
+  <text>. Verifique as notas de versão para possíveis problemas de compatibilidade.</text>
   </div>
 
   <div id="brokenDSTInfo" style="display:none">
     <button id="brokenDSTDialogButtonCancel">X</button>
     <br>
-    <text>Your .dst File is corrupted, there most likely was an error during export.</text>
-    <text>If the domain story was imported, some of your activities and Domain Elements might be missing.</text>
+    <text>Seu arquivo .dst está corrompido, provavelmente ocorreu um erro durante a exportação.</text>
+    <text>Se a história do domínio foi importada, algumas de suas atividades e elementos do domínio podem estar faltando.</text>
   </div>
 
   <div id="brokenSVGInfo" style="display:none">
     <button id="brokenSVGDialogButtonCancel">X</button>
     <br>
-    <text>The .svg file you uploaded does not contain a Domain Story.</text>
+    <text>O arquivo .svg que você carregou não contém uma história de domínio.</text>
   </div>
 
   <script src="./app.js"></script>

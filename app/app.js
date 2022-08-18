@@ -203,9 +203,9 @@ let modal = document.getElementById('modal'),
 wpsInfotext.innerText =
   'Domain Story Modeler v' +
   version +
-  '\nA tool to visualize Domain Stories in the browser.\nProvided by';
-wpsInfotextPart2.innerText = ' and licensed under GPLv3.';
-dstInfotext.innerText = 'Learn more about Domain Storytelling at';
+  '\nUma ferramenta para visualizar Histórias de Domínio no navegador.\nDesenvolvido por';
+wpsInfotextPart2.innerText = ' esta licenciado sob a GPLv3.';
+dstInfotext.innerText = 'Saiba mais sobre a narrativa de domínio em';
 
 // ----
 function initialize(
@@ -847,6 +847,6 @@ async function saveSVG(done) {
       setEncoded(result.svg);
     }
   } catch (err) {
-    alert('There was an error saving the SVG.\n' + err);
+    alert('Ocorreu um erro ao salvar o SVG.\n' + err);
   }
 }
